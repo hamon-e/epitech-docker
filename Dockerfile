@@ -36,3 +36,14 @@ RUN zypper -n install \
     valgrind gdb      \
     zip unzip         \
     glibc-locale
+
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
+
+RUN useradd -md /home/mouli mouli
+USER mouli
+
+ENV USER mouli
+
+WORKDIR /home/mouli/
