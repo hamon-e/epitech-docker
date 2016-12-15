@@ -14,6 +14,7 @@ RUN zypper -n install \
     zsh               \
     ltrace            \
     git               \
+    cmake             \
     nasm                       \
     cunit-devel                \
     libSDL-devel libSDL2-devel \
