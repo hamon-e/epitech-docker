@@ -31,6 +31,7 @@ RUN zypper -n install \
     ca-certificates-mozilla    \
     python3-numpy              \
     ruby                       \
+    openssh                    \
     ocaml                      \
     ocaml-camlp4      \
     bc                \
