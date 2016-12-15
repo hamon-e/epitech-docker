@@ -38,6 +38,14 @@ RUN zypper -n install \
     zip unzip         \
     glibc-locale
 
+RUN git clone https://git.cryptomilk.org/projects/cmocka.git/
+RUN cd cmocka
+RUN mkdir build
+RUN cd build
+RUN cmake ..
+RUN make
+RUN make install
+
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
