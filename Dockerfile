@@ -13,6 +13,7 @@ RUN zypper -n install \
     tcsh              \
     zsh               \
     ltrace            \
+    git               \
     nasm                       \
     cunit-devel                \
     libSDL-devel libSDL2-devel \
